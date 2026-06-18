@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포모</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🍅대신 선택해주는 포모🍅</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
 
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "조아조아",
+                "고고",
+                "노노",
+                "지금 바로 시작",
+                "그럿군"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
